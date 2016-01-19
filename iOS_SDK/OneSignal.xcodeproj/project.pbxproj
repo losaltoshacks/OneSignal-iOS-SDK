@@ -11,6 +11,13 @@
 		3724485819F6D1DE00573B5A /* OneSignalJailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3724485719F6D1DE00573B5A /* OneSignalJailbreakDetection.m */; };
 		37668EE91AA80B7E0095D813 /* OneSignalReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 37668EE81AA80B7E0095D813 /* OneSignalReachability.m */; };
 		37747FC51914837300558FAD /* OneSignalHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 37747FBD1914837300558FAD /* OneSignalHTTPClient.m */; };
+		37764A8A1C4EDAD300835F17 /* OneSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E277041ACB940000D49C8D /* OneSignal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		37764A8B1C4EDAD800835F17 /* OneSignalHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 37747FBC1914837300558FAD /* OneSignalHTTPClient.h */; };
+		37764A8C1C4EDADC00835F17 /* OneSignalTrackIAP.h in Headers */ = {isa = PBXBuildFile; fileRef = 371FDEDA19F1F9D9001479B7 /* OneSignalTrackIAP.h */; };
+		37764A8D1C4EDB2100835F17 /* OneSignalJailbreakDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3724485619F61C9E00573B5A /* OneSignalJailbreakDetection.h */; };
+		37764A8E1C4EDB2400835F17 /* OneSignalReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 37668EE71AA80B7E0095D813 /* OneSignalReachability.h */; };
+		37764A8F1C4EDB2700835F17 /* GameThrive.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E277241ACBB58D00D49C8D /* GameThrive.h */; };
+		37764A901C4EDB2B00835F17 /* OneSignalMobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D6E07C1B1EAE6500EC3624 /* OneSignalMobileProvision.h */; };
 		37D6E07F1B1EAE6500EC3624 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D6E07D1B1EAE6500EC3624 /* OneSignalMobileProvision.m */; };
 		37E277051ACB940000D49C8D /* OneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E277031ACB940000D49C8D /* OneSignal.m */; };
 		37E277261ACBB58D00D49C8D /* GameThrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E277251ACBB58D00D49C8D /* GameThrive.m */; };
@@ -56,7 +63,7 @@
 		37E277041ACB940000D49C8D /* OneSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignal.h; sourceTree = "<group>"; };
 		37E277241ACBB58D00D49C8D /* GameThrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameThrive.h; sourceTree = "<group>"; };
 		37E277251ACBB58D00D49C8D /* GameThrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameThrive.m; sourceTree = "<group>"; };
-		37E3FBAF1C4ED4B600577C8B /* OneSignal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneSignal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E3FBAF1C4ED4B600577C8B /* OneSignal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneSignal_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E3FBB11C4ED4B600577C8B /* OneSignal-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneSignal-iOS.h"; sourceTree = "<group>"; };
 		37E3FBB31C4ED4B600577C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E3FBC41C4ED62500577C8B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -121,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				37747F9319147D6500558FAD /* libOneSignal.a */,
-				37E3FBAF1C4ED4B600577C8B /* OneSignal.framework */,
+				37E3FBAF1C4ED4B600577C8B /* OneSignal_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +190,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37764A8C1C4EDADC00835F17 /* OneSignalTrackIAP.h in Headers */,
+				37764A901C4EDB2B00835F17 /* OneSignalMobileProvision.h in Headers */,
+				37764A8D1C4EDB2100835F17 /* OneSignalJailbreakDetection.h in Headers */,
 				37E3FBB21C4ED4B600577C8B /* OneSignal-iOS.h in Headers */,
+				37764A8B1C4EDAD800835F17 /* OneSignalHTTPClient.h in Headers */,
+				37764A8F1C4EDB2700835F17 /* GameThrive.h in Headers */,
+				37764A8E1C4EDB2400835F17 /* OneSignalReachability.h in Headers */,
+				37764A8A1C4EDAD300835F17 /* OneSignal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +236,7 @@
 			);
 			name = "OneSignal-iOS";
 			productName = "OneSignal-iOS";
-			productReference = 37E3FBAF1C4ED4B600577C8B /* OneSignal.framework */;
+			productReference = 37E3FBAF1C4ED4B600577C8B /* OneSignal_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -424,7 +438,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.losaltoshacks.OneSignal-iOS";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)_iOS";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -454,7 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.losaltoshacks.OneSignal-iOS";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)_iOS";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,6 +504,7 @@
 				37E3FBB61C4ED4B600577C8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

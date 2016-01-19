@@ -1,5 +1,5 @@
 //
-//  OneSignal-iOS.h
+//  OneSignal.h
 //  OneSignal-iOS
 //
 //  Created by Dan Appel on 1/19/16.
